@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "poppins";
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+small {
+  font-size: 0.75;
+}
+
+.profile__photos__global {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 20rem;
+}
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: 7rem auto 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+aside {
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  aside {
+    position: fixed;
+    left: -100%;
+    background-color: #fff;
+    width: 18rem;
+    z-index: 3;
+    box-shadow: 1rem 3rem 4rem rgba(132, 139, 200, 0.18);
+    height: 100vh;
+    padding-right: 1.8rem;
+    display: none;
+    animation: showMenu 400ms ease forwards;
+  }
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+}
+
+.left__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.left__section__logo {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+@media (max-width: 1300px) {
+  .left__section__logo h3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .left__section__logo h3 {
+    display: inline;
+  }
+}
+.left__section__logo img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.left__section__close {
+  display: none;
+}
+@media (max-width: 768px) {
+  .left__section__close {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  top: 3rem;
+}
+nav h3 {
+  font-weight: 500;
+}
+@media (max-width: 1300px) {
+  nav h3 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  nav h3 {
+    display: inline;
+  }
+}
+nav a {
+  display: flex;
+  color: #677483;
+  padding-left: 2rem;
+  gap: 1rem;
+  align-items: center;
+  height: 3.5rem;
+  transition: 200ms ease-in;
+}
+@media (max-width: 768px) {
+  nav a {
+    height: 3.4rem;
+  }
+}
+nav a span {
+  transition: 200ms ease-in;
+  color: #7380ec;
+}
+nav a:hover {
+  color: #7380ec;
+  background-color: rgba(132, 139, 200, 0.18);
+}
+nav a:hover span {
+  margin-left: 1rem;
+}
+nav .nav__logout {
+  margin-top: 7rem;
+}
+
+main {
+  margin-top: 1.4rem;
+}
+@media (max-width: 768px) {
+  main {
+    margin-top: 8rem;
+    padding: 0 2rem;
+  }
+}
+main .calender {
+  display: inline-block;
+  background-color: rgba(132, 139, 200, 0.18);
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1.6rem;
+}
+main .calender input[type=date] {
+  background-color: transparent;
+  color: #363949;
+}
+
+.overall__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+@media (max-width: 1300px) {
+  .overall__stats {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+.overall__stats > div {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+  box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
+  transition: 300ms ease-in;
+}
+.overall__stats > div:hover {
+  box-shadow: none;
+}
+.overall__stats > div .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.overall__stats > div .card__progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+.overall__stats > div .card__progress__chart {
+  width: 7rem;
+  height: 7rem;
+}
+.overall__stats > div .card__progress__chart circle {
+  fill: none;
+  stroke: #7380ec;
+  stroke-width: 14;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+.overall__stats > div .card__progress__percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overall__stats > div span {
+  background-color: #7380ec;
+  width: fit-content;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.3rem;
+}
+
+.mid__section__collected .card__progress__chart circle {
+  stroke-dashoffset: -30;
+  stroke-dasharray: 200;
+}
+
+.mid__section__donors .card__progress__chart circle {
+  stroke-dashoffset: 20;
+  stroke-dasharray: 80;
+}
+
+.mid__section__helped .card__progress__chart circle {
+  stroke-dashoffset: 35;
+  stroke-dasharray: 110;
+}
+
+.all-donors {
+  margin-top: 2rem;
+}
+@media (max-width: 1300px) {
+  .all-donors {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5rem 1rem 0 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .all-donors {
+    position: relative;
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+}
+.all-donors h2 {
+  margin-bottom: 1rem;
+}
+.all-donors a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: #7380ec;
+  text-decoration: underline;
+}
+.all-donors table {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 1.8rem;
+  text-align: center;
+  box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
+  transition: 300ms ease-in;
+}
+@media (max-width: 768px) {
+  .all-donors table {
+    width: 100%;
+    margin: 0;
+  }
+}
+.all-donors table:hover {
+  box-shadow: none;
+}
+.all-donors table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid rgba(132, 139, 200, 0.18);
+  color: #677483;
+}
+.all-donors table tbody td:last-child {
+  color: #7380ec;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.all-donors table tbody td:last-child:hover {
+  color: #363949;
+}
+
+.right__section {
+  margin-top: 1.4rem;
+}
+@media (max-width: 768px) {
+  .right__section {
+    width: 94%;
+    margin: 0 auto 4rem;
+  }
+}
+.right__section__top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .right__section__top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 0.8rem;
+    height: 4.6rem;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 1rem 1rem rgba(132, 139, 200, 0.18);
+  }
+}
+.right__section__top button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .right__section__top button {
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    color: #363949;
+    position: absolute;
+    left: 1rem;
+  }
+}
+.right__section__top__admin {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
+
+.right__section .recent__donors {
+  margin-top: 1rem;
+  width: 98%;
+}
+.right__section .recent__donors h2 {
+  margin-bottom: 1rem;
+}
+.right__section .recent__donors__content {
+  padding: 1.8rem;
+  border-radius: 2rem;
+  box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
+  transition: 300ms ease-in;
+  background-color: #fff;
+}
+.right__section .recent__donors__content:hover {
+  box-shadow: none;
+}
+.right__section .recent__donors__content__info {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.right__section .analytics {
+  margin-top: 2rem;
+  width: 98%;
+}
+.right__section .analytics h2 {
+  margin-bottom: 0.8rem;
+}
+.right__section .analytics__container {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1.4rem 1.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
+  transition: 300ms ease-in;
+}
+.right__section .analytics__container:hover {
+  box-shadow: none;
+}
+.right__section .analytics__container .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  width: 100%;
+  background-color: red;
+}
+.right__section .analytics__container__icon {
+  padding: 0.6rem;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  background-color: #7380ec;
+}
+
+#analytics__danger {
+  background-color: #ff7782;
+}
+
+#analytics__success {
+  background-color: #41f1b6;
+}
+
+/*# sourceMappingURL=style.css.map */

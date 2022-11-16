@@ -1,0 +1,117 @@
+// -----------------------------------------
+// ------------ LEFT section ---------------
+// ----- ↓↓↓ ------------------- ↓↓↓ -------
+
+aside {
+    height: 100vh;
+    @media (max-width: 768px){
+        position: fixed;
+        left: -100%;
+        background-color: $white;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem $light;
+        height: 100vh;
+        padding-right: $card-padding;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+
+        @keyframes showMenu {
+            to {
+                left: 0;
+            }
+        }
+    }
+}
+
+    .left__section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+
+        &__logo {
+            display: flex;
+            gap: 0.8rem;
+            align-items: center;
+            margin-left: 1.5rem;
+
+            h3 {
+                @media (max-width: 1300px){
+                    display: none;
+                }
+                @media (max-width: 768px){
+                    display: inline;
+                }
+            }
+
+            img {
+                width: 2.3rem;
+                height: 2.3rem;
+            }
+        }
+
+        &__close {
+            display: none;
+            @media (max-width: 768px){
+                display: inline-block;
+                cursor: pointer;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+
+// -- SUBsection of LEFT section --
+
+nav {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+    
+    h3 {
+        font-weight: 500;
+        @media (max-width: 1300px){
+            display: none;
+        }
+        @media (max-width: 768px){
+            display: inline;
+        }
+
+    }
+
+    a {
+        display: flex;
+        color: $dark-variant;
+        padding-left: 2rem;
+        gap: 1rem;
+        align-items: center;
+        height: 3.5rem;
+        transition: 200ms ease-in;
+        @media (max-width: 768px){
+            height: 3.4rem;
+        }
+        
+        span {
+            transition: 200ms ease-in;
+            color: $primary;
+        }
+
+        &:hover {
+            color: $primary;
+            background-color: $light;
+
+            span {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .nav__logout {
+        margin-top: 7rem;
+    }
+}
+//------ ↑↑↑ END of LEFT section ↑↑↑ -------

@@ -1,0 +1,111 @@
+// -------------------------------------------
+// ------------ MIDDLE section ---------------
+// ----- ↓↓↓ --------------------- ↓↓↓ -------
+
+main {
+    margin-top: 1.4rem;
+    @media (max-width: 768px){
+    margin-top: 8rem;
+    padding: 0 2rem;
+    }
+
+    .calender {
+        display: inline-block;
+        background-color: $light;
+        border-radius: $border-radius-1;
+        margin-top: 1rem;
+        padding: 0.5rem 1.6rem;
+
+        input[type='date']{
+            background-color: transparent;
+            color: $dark;
+        }
+    }
+}
+
+
+// -- This is SUBsection of MIDDLE section --
+
+.overall__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    @media (max-width: 1300px){
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    > div {
+        background-color: $white;
+        padding: $card-padding;
+        border-radius: $border-radius-1;
+        margin-top: 1rem;
+        box-shadow: $box-shadow;
+        transition: 300ms ease-in;
+
+        &:hover {
+            box-shadow:none
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            &__progress {
+                position: relative;
+                width: 92px;
+                height: 92px;
+                border-radius: 50%;
+
+                &__chart {
+                    width: 7rem;
+                    height: 7rem;
+        
+                    circle {
+                        fill: none;
+                        stroke: $primary;
+                        stroke-width: 14;
+                        stroke-linecap: round;
+                        transform: translate(5px, 5px);
+                    }
+                }
+
+                &__percentage {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        span {
+            background-color: $primary;
+            width: fit-content;
+            border-radius: 50%;
+            color: $white;
+            font-size: 2rem;
+            padding: 0.3rem;
+        }
+    }
+}
+
+// -- customized individual charts --
+.mid__section__collected .card__progress__chart circle {
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+.mid__section__donors .card__progress__chart circle {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 80;
+}
+.mid__section__helped .card__progress__chart circle {
+    stroke-dashoffset: 35;
+    stroke-dasharray: 110;
+}
+//------ ↑↑↑ END of MIDDLE section ↑↑↑ -------

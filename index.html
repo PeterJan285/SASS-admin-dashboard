@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+  <!---------------------------------------------->
+  <!-------------- LEFT section ------------------>
+  <!-----↓↓↓---------------------------↓↓↓-------->
+
+      <aside>
+          <div class="left__section">
+              <div class="left__section__logo">
+                  <img src="./assets/images/logo.png" alt="IMAGE MISSING">
+                  <h3>HelpToday.com</h3>
+              </div>
+              <div class="left__section__close" id="close-btn">
+                <span class="material-symbols-outlined">
+                  close
+                  </span>
+              </div>
+          </div>
+
+
+  <!-- SUBsection of LEFT section called NAV -->
+          <nav>
+              <a href=""><span class="material-symbols-outlined">
+                dashboard
+                </span>
+              <h3>Dashboard</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                person_filled
+                </span>
+              <h3>Donors</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                border_color
+                </span>
+              <h3>Orders</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                analytics
+                </span>
+              <h3>Analytics</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                forum
+                </span>
+              <h3>Messages</h3>
+              <a href=""><span class="material-symbols-outlined">
+                inventory_2
+                </span>
+              <h3>Inventory</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                flag
+                </span>
+              <h3>Reports</h3></a>
+              <a href=""><span class="material-symbols-outlined">
+                settings
+                </span>
+              <h3>Settings</h3></a>
+              <a class="nav__logout" href=""><span class="material-symbols-outlined">
+                logout
+                </span>
+              <h3>Logout</h3></a>
+              </nav>
+      </aside>
+
+<!---------- ↑↑↑ END of LEFT section ↑↑↑ ----------->
+
+
+
+  <!---------------------------------------------->
+  <!-------------- MIDDLE section ---------------->
+  <!-----↓↓↓---------------------------↓↓↓-------->
+
+  <main>
+      <h1>Dashboard</h1>
+        <div class="calender">
+          <input type="date">
+        </div>
+    <section class="overall__stats">
+
+
+      <div class="mid__section__collected">
+        <span class="material-symbols-outlined">price_check</span>
+
+        <div class="card">
+           <div>
+             <h3>Collected</h3>
+             <h1>$7. 450</h1>
+           </div>
+
+           <div class="card__progress">
+             <svg class="card__progress__chart">
+               <circle cx='38' cy='38' r='36'></circle>
+             </svg>
+             <div class="card__progress__percentage">
+               <p>81%</p>
+             </div>
+           </div>
+        </div>
+
+        <small class="text-muted">Last 24h</small>
+      </div>
+        <!----- end of card called COLLECTED ----->
+
+
+      <div class="mid__section__donors">
+        <span class="material-symbols-outlined">accessibility_new</span>
+
+        <div class="card">
+          <div>
+            <h3>Donors</h3>
+            <h1>4.637</h1>
+          </div>
+
+          <div class="card__progress">
+            <svg class="card__progress__chart">
+              <circle cx='38' cy='38' r='36'></circle>
+            </svg>
+            <div class="card__progress__percentage">
+              <p>62%</p>
+            </div>
+          </div>
+        </div>
+        <small class="text-muted">Last 24h</small>
+      </div>
+      <!----- end of card called DONORS ----->
+
+
+      <div class="mid__section__helped">
+        <span class="material-symbols-outlined">
+          accessible
+          </span>
+
+        <div class="card">
+          <div>
+            <h3>Helped</h3>
+            <h1>3.854</h1>
+          </div>
+
+          <div class="card__progress">
+            <svg class="card__progress__chart">
+              <circle cx='38' cy='38' r='36'></circle>
+            </svg>
+            <div class="card__progress__percentage">
+              <p>44%</p>
+            </div>
+          </div>
+        </div>
+        <small class="text-muted">Last 24h</small>
+      </div>
+      <!----- end of card called HELPED ----->
+    </section>
+<!---------- ↑↑↑ END of MIDDLE section ↑↑↑ ----------->
+
+
+  
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
