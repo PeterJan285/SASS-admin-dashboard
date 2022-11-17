@@ -160,7 +160,194 @@
 <!---------- ↑↑↑ END of MIDDLE section ↑↑↑ ----------->
 
 
-  
+  <!---------------------------------------------->
+  <!-------------- TABLE section ----------------->
+  <!-----↓↓↓---------------------------↓↓↓-------->
+
+      <div class="all-donors">
+        <h2>List of all donors</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Amount</th>
+              <th>People Helped</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Cairon Pratt</td>
+              <td>$148</td>
+              <td>3</td>
+              <td>pending</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Rhea Hirst</td>
+              <td>$50</td>
+              <td>1</td>
+              <td>donated</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Tarun Manning</td>
+              <td>$421</td>
+              <td>8</td>
+              <td>donated</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Emre Foreman</td>
+              <td>$267</td>
+              <td>5</td>
+              <td>pending</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Liyana Kendall</td>
+              <td>$112</td>
+              <td>2</td>
+              <td>pending</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Giles Hubbard</td>
+              <td>$156</td>
+              <td>3</td>
+              <td>donated</td>
+              <td>details</td>
+            </tr>
+            <tr>
+              <td>Kendall Pratt</td>
+              <td>$452</td>
+              <td>9</td>
+              <td>pending</td>
+              <td>details</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="">show all</a>
+      </div>
+  </main>
+<!---------- ↑↑↑ END of TABLE section ↑↑↑ ----------->
+
+
+
+  <!---------------------------------------------->
+  <!-------------- RIGHT section ----------------->
+  <!-----↓↓↓---------------------------↓↓↓-------->
+
+  <section class="right__section">
+    <div class="right__section__top">
+      <button id="menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+
+      <div class="right__section__top__admin">
+        <div class="right__section__profile__info">
+          <p>Hey, <b>Peter</b></p>
+          <small class="text-muted">Admin</small>
+        </div>
+        <div class="profile__photos__global">
+          <img src="./assets/images/admin.png" alt="IMAGE MISSING">
+        </div>
+      </div>
+    </div>
+
+    
+  <!---- SUBsection called RECENT DONORS ---->
+    <article class="recent__donors">
+      <h2>Recent donors</h2>
+
+      <div class="recent__donors__content">
+        <div class="recent__donors__content__info">
+          <div class="profile__photos__global">
+            <img src="./assets/images/profile-1.jpg" alt="IMAGE MISSING">
+          </div>
+          <div class="recent__donors__info__message">
+            <p><b>Jozef Potts</b> donated $134 and helped 2 people !</p>
+            <small class="text-muted">57 min ago</small>
+          </div>
+        </div>
+
+        <div class="recent__donors__content__info">
+          <div class="profile__photos__global">
+            <img src="./assets/images/profile-2.jpg" alt="IMAGE MISSING">
+          </div>
+          <div class="recent__donors__info__message">
+            <p><b>Rose Bennett</b> donated $274 and helped 5 people !</p>
+            <small class="text-muted">4 hrs ago</small>
+          </div>
+        </div>
+
+        <div class="recent__donors__content__info">
+          <div class="profile__photos__global">
+            <img src="./assets/images/profile-3.jpg" alt="IMAGE MISSING">
+          </div>
+          <div class="recent__donors__info__message">
+            <p><b>Karol Landry</b> donated $58 and helped 1 people !</p>
+            <small class="text-muted">13 hrs ago</small>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+  <!---- SUBsection called ANALYTICS ---->
+    <article class="analytics">
+      <h2>Analytics</h2>
+
+      <!-- card 1 -->
+      <div class="analytics__container">
+        <div class="analytics__container__icon">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </div>
+        <div class="analytics__main">
+          <div class="analytics__main__info">
+            <h3>Funds income</h3>
+            <small class="text-muted">last 24 hours</small>
+            <h5 class="success">+24%</h5>
+            <h3>235 donors</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="analytics__container">
+        <div class="analytics__container__icon" id="analytics__danger">
+          <span class="material-symbols-outlined">local_mall</span>
+        </div>
+        <div class="analytics__main">
+          <div class="analytics__main__info">
+            <h3>New donors</h3>
+            <small class="text-muted">last 24 hours</small>
+            <h5>+13%</h5>
+            <h3>$1460 dollars</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+      <div class="analytics__container">
+        <div class="analytics__container__icon" id="analytics__success">
+          <span class="material-symbols-outlined">background_replace</span>
+        </div>
+        <div class="analytics__main">
+          <div class="analytics__main__info">
+            <h3>People helped</h3>
+            <small class="text-muted">last 24 hours</small>
+            <h5 class="analytics__success">+25%</h5>
+            <h3>237 people</h3>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+  </section>
   </div>
 
     <script src="script.js"></script>

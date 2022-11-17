@@ -280,67 +280,6 @@ main .calender input[type=date] {
   stroke-dasharray: 110;
 }
 
-.all-donors {
-  margin-top: 2rem;
-}
-@media (max-width: 1300px) {
-  .all-donors {
-    width: 80%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 5rem 1rem 0 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .all-donors {
-    position: relative;
-    margin: 3rem 0 0 0;
-    width: 100%;
-  }
-}
-.all-donors h2 {
-  margin-bottom: 1rem;
-}
-.all-donors a {
-  text-align: center;
-  display: block;
-  margin: 1rem auto;
-  color: #7380ec;
-  text-decoration: underline;
-}
-.all-donors table {
-  background-color: #fff;
-  width: 100%;
-  border-radius: 2rem;
-  padding: 1.8rem;
-  text-align: center;
-  box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
-  transition: 300ms ease-in;
-}
-@media (max-width: 768px) {
-  .all-donors table {
-    width: 100%;
-    margin: 0;
-  }
-}
-.all-donors table:hover {
-  box-shadow: none;
-}
-.all-donors table tbody td {
-  height: 2.8rem;
-  border-bottom: 1px solid rgba(132, 139, 200, 0.18);
-  color: #677483;
-}
-.all-donors table tbody td:last-child {
-  color: #7380ec;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.all-donors table tbody td:last-child:hover {
-  color: #363949;
-}
-
 .right__section {
   margin-top: 1.4rem;
 }
