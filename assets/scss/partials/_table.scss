@@ -1,0 +1,66 @@
+// -------------------------------------------
+// ------------ TABLE section ----------------
+// ----- ↓↓↓ --------------------- ↓↓↓ -------
+
+.all-donors {
+    margin-top: 2rem;
+    @media (max-width: 1300px){
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 5rem 1rem 0 1rem;
+    }
+    @media (max-width: 768px){
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color: $primary;
+        text-decoration: underline;
+    }
+
+    table {
+        background-color: $white;
+        width: 100%;
+        border-radius: $card-border-radius;
+        padding: $card-padding;
+        text-align: center;
+        box-shadow: $box-shadow;
+        transition: 300ms ease-in;
+        @media (max-width: 768px){
+            width: 100%;
+            margin: 0;
+        }
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        tbody td {
+            height: 2.8rem;
+            border-bottom: 1px solid $light;
+            color: $dark-variant;
+
+            &:last-child {
+                color: $primary;
+                text-decoration: underline;
+                cursor: pointer;
+
+                &:hover {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+//------ ↑↑↑ END of TABLE section ↑↑↑ -------
