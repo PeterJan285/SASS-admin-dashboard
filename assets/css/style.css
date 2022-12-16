@@ -59,6 +59,7 @@ b {
   gap: 1.8rem;
   grid-template-columns: 14rem auto 20rem;
 }
+
 @media (max-width: 1300px) {
   .container {
     grid-template-columns: 7rem auto 20rem;
@@ -70,7 +71,6 @@ b {
     grid-template-columns: 1fr;
   }
 }
-
 aside {
   height: 100vh;
 }
@@ -98,13 +98,15 @@ aside {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border: 1px solid #dce1eb;
+  border-bottom: 0px;
 }
 .left__section__logo {
   display: flex;
   gap: 0.8rem;
   align-items: center;
-  margin-left: 1.5rem;
+  padding-left: 1.5rem;
 }
 @media (max-width: 1300px) {
   .left__section__logo h3 {
@@ -137,7 +139,9 @@ nav {
   flex-direction: column;
   height: 86vh;
   position: relative;
-  top: 3rem;
+  padding-top: 2rem;
+  border: 1px solid #dce1eb;
+  border-top: 0px;
 }
 nav h3 {
   font-weight: 500;
@@ -181,6 +185,78 @@ nav .nav__logout {
   margin-top: 7rem;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "poppins";
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+small {
+  font-size: 0.75;
+}
+
+.profile__photos__global {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 20rem;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: 7rem auto 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
 main {
   margin-top: 1.4rem;
 }
@@ -216,10 +292,11 @@ main .calender input[type=date] {
 .overall__stats > div {
   background-color: #fff;
   padding: 1.8rem;
-  border-radius: 0.4rem;
+  border-radius: 0.8rem;
   margin-top: 1rem;
   box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
   transition: 300ms ease-in;
+  border: 1px solid #dce1eb;
 }
 .overall__stats > div:hover {
   box-shadow: none;
@@ -280,6 +357,78 @@ main .calender input[type=date] {
   stroke-dasharray: 110;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "poppins";
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+small {
+  font-size: 0.75;
+}
+
+.profile__photos__global {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 20rem;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: 7rem auto 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
 .right__section {
   margin-top: 1.4rem;
 }
@@ -337,10 +486,11 @@ main .calender input[type=date] {
 }
 .right__section .recent__donors__content {
   padding: 1.8rem;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
   transition: 300ms ease-in;
   background-color: #fff;
+  border: 1px solid #dce1eb;
 }
 .right__section .recent__donors__content:hover {
   box-shadow: none;
@@ -369,6 +519,7 @@ main .calender input[type=date] {
   border-radius: 1.2rem;
   box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);
   transition: 300ms ease-in;
+  border: 1px solid #dce1eb;
 }
 .right__section .analytics__container:hover {
   box-shadow: none;
@@ -397,6 +548,78 @@ main .calender input[type=date] {
   background-color: #41f1b6;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "poppins";
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+small {
+  font-size: 0.75;
+}
+
+.profile__photos__global {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 20rem;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    grid-template-columns: 7rem auto 20rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
 .all-donors {
   margin-top: 2rem;
 }
@@ -429,7 +652,8 @@ main .calender input[type=date] {
 .all-donors table {
   background-color: #fff;
   width: 100%;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #dce1eb;
   padding: 1.8rem;
   text-align: center;
   box-shadow: 0 0rem 2rem 0.5rem rgba(132, 139, 200, 0.18);

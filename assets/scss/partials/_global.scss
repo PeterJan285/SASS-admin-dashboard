@@ -1,4 +1,6 @@
 
+@use 'variables' as *;
+
 
 @mixin flex ($justify, $align, $direction, $gap){
 	display: flex;

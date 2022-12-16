@@ -2,6 +2,9 @@
 // ------------ MIDDLE section ---------------
 // ----- ↓↓↓ --------------------- ↓↓↓ -------
 
+@use 'variables' as *;
+@use 'global' as *;
+
 main {
     margin-top: 1.4rem;
     @media (max-width: 768px){
@@ -38,10 +41,11 @@ main {
     > div {
         background-color: $white;
         padding: $card-padding;
-        border-radius: $border-radius-1;
+        border-radius: $border-radius-2;
         margin-top: 1rem;
         box-shadow: $box-shadow;
         transition: 300ms ease-in;
+        border: 1px solid $info-light;
 
         &:hover {
             box-shadow:none

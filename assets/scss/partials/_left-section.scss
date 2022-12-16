@@ -2,6 +2,9 @@
 // ------------ LEFT section ---------------
 // ----- ↓↓↓ ------------------- ↓↓↓ -------
 
+@use 'variables' as *;
+@use 'global' as *;
+
 aside {
     height: 100vh;
     @media (max-width: 768px){
@@ -15,6 +18,7 @@ aside {
         padding-right: $card-padding;
         display: none;
         animation: showMenu 400ms ease forwards;
+        
 
         @keyframes showMenu {
             to {
@@ -28,13 +32,15 @@ aside {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border: 1px solid $info-light;
+        border-bottom: 0px;
 
         &__logo {
             display: flex;
             gap: 0.8rem;
             align-items: center;
-            margin-left: 1.5rem;
+            padding-left: 1.5rem;
 
             h3 {
                 @media (max-width: 1300px){
@@ -70,7 +76,10 @@ nav {
     flex-direction: column;
     height: 86vh;
     position: relative;
-    top: 3rem;
+    padding-top: 2rem;
+    border: 1px solid $info-light;
+    border-top: 0px;
+
     
     h3 {
         font-weight: 500;
